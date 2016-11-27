@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cstdio>
+int main() {
+	int t;
+	unsigned a, b;
+	scanf("%d", &t);
+	for (int tt = 0; tt < t; tt++) {
+		scanf("%o%o", &a, &b);
+		if (a > b) {
+			printf("%o\n", a - b);
+		} else {
+			printf("-%o\n", b - a);
+		}
+	}
+}
